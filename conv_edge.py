@@ -38,14 +38,14 @@ def extract_edges(image):
 
 
 def main():
-    # Step 1: Load the image
+    # Image 
     image_path = 'sample_img.jpg'
     image = load_image(image_path)
 
-    # Step 2: Extract first and second order edges
+    # Extract first and second order edges
     overlapped_edges = extract_edges(image)
 
-    # Step 3: Display the result
+    #Display the result
     cv2.imshow('Edges', overlapped_edges)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
