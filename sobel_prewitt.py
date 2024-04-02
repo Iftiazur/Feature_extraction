@@ -44,14 +44,14 @@ def extract_edges(image):
 
 
 def main():
-    # Step 1: Load the image
+    #Load the image
     image_path = 'sample_img.jpg'
     image = load_image(image_path)
 
-    # Step 2: Extract Sobel and Prewitt edges
+    # Extract Sobel and Prewitt edges
     overlapped_edges = extract_edges(image)
 
-    # Step 3: Display the result
+    # Result Display
     cv2.imshow('Edges', overlapped_edges)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
